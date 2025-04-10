@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Microsoft YaHei', "华文行楷", "楷体", serif;
+}
+
+body {
+    background-color: #e8d6c3; /* 更温暖的茶色背景 */
+    background-image: linear-gradient(to bottom, #e8d6c3, #c9b18c); /* 添加渐变效果 */
+    color: #5a3921; /* 调整文字颜色，使其更符合茶馆风格 */
+    background-attachment: fixed;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 251, 240, 0.9); /* 温暖的半透明背景 */
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(90, 57, 33, 0.3);
+    border: 1px solid #d0b89a;
+}
+
+.header {
+    text-align: center;
+    padding: 25px 0;
+    border-bottom: 2px solid #8B4513;
+    margin-bottom: 25px;
+}
+
+.logo {
+    height: 80px;
+    border-radius: 10px; /* 为logo添加圆角 */
+}
+
+.nav {
+    background-color: #8c6e4a; /* 调整为更柔和的棕色 */
+    padding: 12px 0;
+    border-radius: 8px;
+}
+
+.nav table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nav td {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav a {
+    color: #f5e9dc;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav a:hover {
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.content {
+    min-height: 500px;
+    background-color: rgba(255, 248, 240, 0.9); /* 半透明背景 */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(90, 57, 33, 0.15);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 25px;
+    font-size: 14px;
+    border-top: 1px solid #d0b89a;
+    color: #8c6e4a;
+}
+
+.music-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(140, 110, 74, 0.85); /* 更柔和的茶色调 */
+    padding: 15px;
+    border-radius: 12px;
+    color: #f5e9dc;
+    z-index: 100;
+    box-shadow: 0 3px 10px rgba(90, 57, 33, 0.25);
+    border: 1px solid rgba(208, 184, 154, 0.6);
+    backdrop-filter: blur(3px);
+    transition: all 0.3s ease;
+    max-width: 300px;
+}
+
+.music-player:hover {
+    background-color: rgba(140, 110, 74, 0.9);
+    box-shadow: 0 4px 12px rgba(90, 57, 33, 0.3);
+    transform: translateY(-2px);
+}
+
+.music-player-title {
+    font-family: "华文行楷", "楷体", serif;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 5px;
+}
+
+.music-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.music-controls button {
+    background-color: rgba(255, 248, 240, 0.2);
+    border: none;
+    color: #f5e9dc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 12px;
+}
+
+.music-controls button:hover {
+    background-color: rgba(255, 248, 240, 0.4);
+    transform: scale(1.1);
+}
+
+.music-progress {
+    height: 4px;
+    background-color: rgba(255, 248, 240, 0.3);
+    border-radius: 2px;
+    margin: 8px 0;
+    overflow: hidden;
+}
+
+.music-progress-bar {
+    height: 100%;
+    background-color: #f5e9dc;
+    width: 30%;
+}
+
+.theme-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.fade-in {
+    animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.quote-section {
+    margin: 30px 0;
+    padding: 20px;
+    border-top: 1px solid #d0b89a;
+    border-bottom: 1px solid #d0b89a;
+    font-style: italic;
+}
+
+.quote {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #6b4926;
+}
+
+.quote-author {
+    font-size: 16px;
+    color: #8c6e4a;
+    text-align: right;
+    margin-top: 5px;
+}

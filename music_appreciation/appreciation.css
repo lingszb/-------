@@ -1,0 +1,93 @@
+.appreciation-header {
+    background-color: #6b4226;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.music-piece {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f1e6;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.music-title {
+    color: #6b4226;
+    border-bottom: 1px solid #d9c5a9;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.composer-info {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.composer-photo {
+    width: auto;
+    max-width: 100px;
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.composer-bio {
+    flex: 1;
+}
+
+.music-analysis {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.music-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #e8d9c5;
+    border-radius: 5px;
+}
+
+.play-button {
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: #6b4226;
+}
+
+.appreciation-navigation {
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #8B4513;
+    text-align: center;
+}
+
+.appreciation-navigation a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color: #8B4513;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.appreciation-navigation a:hover {
+    background-color: #6b4226;
+}
