@@ -73,26 +73,26 @@
                 
                 <div class="suggestion-form">
                     <h3>您的建议详情</h3>
-                    <table border="0" cellspacing="0" cellpadding="5" width="100%">
+                    <table class="suggestion-detail-table">
                         <tr>
-                            <td width="20%"><strong>姓名：</strong></td>
+                            <td>姓名</td>
                             <td><%= name %></td>
                         </tr>
                         <tr>
-                            <td><strong>电子邮箱：</strong></td>
+                            <td>电子邮箱</td>
                             <td><%= email %></td>
                         </tr>
                         <tr>
-                            <td><strong>主题：</strong></td>
-                            <td><%= topic %></td>
+                            <td>主题</td>
+                            <td><span class="suggestion-topic-tag"><%= topic %></span></td>
                         </tr>
                         <tr>
-                            <td><strong>喜爱的音乐类型：</strong></td>
+                            <td>喜爱的音乐类型</td>
                             <td><%= musicTypes %></td>
                         </tr>
                         <tr>
-                            <td><strong>建议内容：</strong></td>
-                            <td><%= suggestion %></td>
+                            <td>建议内容</td>
+                            <td><div class="suggestion-content"><%= suggestion %></div></td>
                         </tr>
                     </table>
                     

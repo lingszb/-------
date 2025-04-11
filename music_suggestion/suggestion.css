@@ -138,3 +138,123 @@ textarea.form-control {
     background-color: #5a6268;
     transform: translateY(-2px);
 }
+
+/* 建议详情表格样式优化 */
+.suggestion-detail-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.suggestion-detail-table tr:nth-child(even) {
+    background-color: #f9f5f0;
+}
+
+.suggestion-detail-table tr:hover {
+    background-color: #f5ebde;
+}
+
+.suggestion-detail-table td {
+    padding: 10px;
+    border-bottom: 1px solid #e0d5c5;
+}
+
+.suggestion-detail-table td:first-child {
+    font-weight: bold;
+    width: 20%;
+    background-color: #f0e6d8;
+}
+
+/* 建议内容文本区域样式 */
+.suggestion-content {
+    background-color: #fff8f0;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #8B4513;
+    margin-top: 10px;
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
+/* 主题过滤器样式 */
+.topic-filter {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.topic-filter select {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.topic-filter button {
+    padding: 8px 15px;
+}
+
+/* 建议列表样式 */
+.suggestion-list {
+    list-style: none;
+    padding: 0;
+}
+
+.suggestion-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.suggestion-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+}
+
+.suggestion-header-info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.suggestion-topic-tag {
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: #8B4513;
+    color: white;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+/* 分页控制样式 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #8B4513;
+}
+
+.pagination a.active {
+    background-color: #8B4513;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #f5f5f5;
+}

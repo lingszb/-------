@@ -578,3 +578,66 @@ document.addEventListener('DOMContentLoaded', function() {
     // 加载保存的状态 - 确保在DOM完全加载后再执行
     window.musicPlayer.loadPlayerState();
 });
+
+// 添加播放功能增强
+let currentlyPlaying = null;
+
+function playMusic(buttonElement, trackPath) {
+    const controlsDiv = buttonElement.closest('.music-controls');
+    const playIcon = buttonElement.querySelector('.play-icon');
+    
+    // 如果点击的是当前正在播放的按钮，则暂停
+    if (currentlyPlaying === controlsDiv && window.musicPlayer.isPlaying()) {
+        window.musicPlayer.pause();
+        playIcon.textContent = '▶';
+        controlsDiv.classList.remove('playing');
+        currentlyPlaying = null;
+        return;
+    }
+    
+    // 重置所有按钮状态
+    document.querySelectorAll('.music-controls').forEach(div => {
+        div.classList.remove('playing');
+        div.querySelector('.play-icon').textContent = '▶';
+    });
+    
+    // 播放新选择的音乐
+    window.musicPlayer.playSpecificTrack(trackPath);
+    playIcon.textContent = '❚❚';
+    controlsDiv.classList.add('playing');
+    currentlyPlaying = controlsDiv;
+    
+    // 监听播放结束事件
+    window.musicPlayer.onTrackEnd(() => {
+        if (currentlyPlaying) {
+            currentlyPlaying.classList.remove('playing');
+            currentlyPlaying.querySelector('.play-icon').textContent = '▶';
+            currentlyPlaying = null;
+        }
+    });
+}
+
+// 如果原始musicPlayer对象尚未包含这些方法，添加它们
+if (window.musicPlayer) {
+    if (!window.musicPlayer.isPlaying) {
+        window.musicPlayer.isPlaying = function() {
+            return this.audio && !this.audio.paused;
+        };
+    }
+    
+    if (!window.musicPlayer.pause) {
+        window.musicPlayer.pause = function() {
+            if (this.audio) {
+                this.audio.pause();
+            }
+        };
+    }
+    
+    if (!window.musicPlayer.onTrackEnd) {
+        window.musicPlayer.onTrackEnd = function(callback) {
+            if (this.audio) {
+                this.audio.onended = callback;
+            }
+        };
+    }
+}

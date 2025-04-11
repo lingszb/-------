@@ -50,7 +50,9 @@
                 </div>
                 
                 <div class="music-controls">
-                    <button class="play-button" onclick="window.musicPlayer.playSpecificTrack('music/千与千寻.mp3')">播放音乐</button>
+                    <button class="play-button image-button" onclick="window.musicPlayer.playSpecificTrack(encodeURI('music/千与千寻.mp3'))">
+                        <span class="play-icon">▶</span>
+                    </button>
                     <span>久石让 - 千与千寻主题曲</span>
                 </div>
             </div>
@@ -74,10 +76,13 @@
                 </div>
                 
                 <div class="music-controls">
-                    <button class="play-button" onclick="window.musicPlayer.playSpecificTrack('music/nocturne.mp3')">播放音乐</button>
-                    <span>肖邦 - 夜曲 Op.9 No.2</span>
+                    <button class="play-button image-button"
+                        onclick="window.musicPlayer.playSpecificTrack(encodeURI('music/nocturne.mp3'))">
+                        <span class="play-icon">▶</span>
+                    </button>
+                    <span>夜曲 - 肖邦</span>
                 </div>
-            </div>
+                </div>
             
             <!-- 添加德彪西月光 -->
             <div class="music-piece">
@@ -98,7 +103,9 @@
                 </div>
                 
                 <div class="music-controls">
-                    <button class="play-button" onclick="window.musicPlayer.playSpecificTrack('music/clair_de_lune.mp3')">播放音乐</button>
+                    <button class="play-button image-button" onclick="window.musicPlayer.playSpecificTrack(encodeURI('music/clair_de_lune.mp3'))">
+                        <span class="play-icon">▶</span>
+                    </button>
                     <span>德彪西 - 月光</span>
                 </div>
             </div>
