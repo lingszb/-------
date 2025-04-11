@@ -51,7 +51,7 @@
                 
                 <div class="music-controls">
                     <button class="play-button image-button" onclick="window.musicPlayer.playSpecificTrack(encodeURI('music/autumn leaves.mp3'))">
-                        <span class="play-icon">▶</span>
+                        <span class="play-icon"></span>
                     </button>
                     <span>Bill Evans - Autumn Leaves</span>
                 </div>
@@ -76,7 +76,7 @@
                 
                 <div class="music-controls">
                     <button class="play-button image-button" onclick="window.musicPlayer.playSpecificTrack(encodeURI('music/alone.mp3'))">
-                        <span class="play-icon">▶</span>
+                        <span class="play-icon"></span>
                     </button>
                     <span>Marshmello - Alone</span>
                 </div>

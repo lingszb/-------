@@ -78,6 +78,14 @@
 </head>
 <body>
     <div class="welcome-container">
+        <style>
+            body {
+            background-image: url('images/welcome.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            }
+        </style>
         <img src="images/logo.png" alt="音乐茶馆Logo" class="logo">
         <h1>静享茶香 · 感受音乐</h1>
         

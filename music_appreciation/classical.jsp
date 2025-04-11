@@ -51,7 +51,7 @@
                 
                 <div class="music-controls">
                     <button class="play-button image-button" onclick="window.musicPlayer.playSpecificTrack(encodeURI('music/千与千寻.mp3'))">
-                        <span class="play-icon">▶</span>
+                        <span class="play-icon"></span>
                     </button>
                     <span>久石让 - 千与千寻主题曲</span>
                 </div>
@@ -78,7 +78,7 @@
                 <div class="music-controls">
                     <button class="play-button image-button"
                         onclick="window.musicPlayer.playSpecificTrack(encodeURI('music/nocturne.mp3'))">
-                        <span class="play-icon">▶</span>
+                        <span class="play-icon"></span>
                     </button>
                     <span>夜曲 - 肖邦</span>
                 </div>
@@ -104,7 +104,7 @@
                 
                 <div class="music-controls">
                     <button class="play-button image-button" onclick="window.musicPlayer.playSpecificTrack(encodeURI('music/clair_de_lune.mp3'))">
-                        <span class="play-icon">▶</span>
+                        <span class="play-icon"></span>
                     </button>
                     <span>德彪西 - 月光</span>
                 </div>
